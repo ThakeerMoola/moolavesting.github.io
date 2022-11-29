@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styling.css" rel="stylesheet" type="text/css"> 
+    </head>
+    <body>
+            <div class="contact-section">
+
+                   <h1>Get Involved</h1>
+           <div class="border"></div>
+           
+               <form class="contact-form" action="index.html" method="post">
+                   
+                   <input type="text"  id="NameV" class="contact-form-text" placeholder="Your name" 
+                          required name ="Your name" oninvalid="this.setCustomValidity('Please Enter Your Name')" oninput="this.setCustomValidity('')">
+                   
+                   <input type="email" id="emailV" class="contact-form-text" placeholder="Your email" 
+                          required name="Your email"  oninvalid="this.setCustomValidity('Please Enter Your Email')" oninput="this.setCustomValidity('')">
+                   
+                 <input type="text" id="phNO" class="contact-form-text" placeholder="Your phone"
+                         required name="Your phone" oninvalid="this.setCustomValidity('Please Enter Your Phone Number')" oninput="this.setCustomValidity('')" pattern="[0-9]{1}[0-9]{9}">
+              
+                 <textarea class="contact-form-text" id="MessageV" placeholder="Your message"
+                           required oninvalid="this.setCustomValidity('Please Enter Your Message')" oninput="this.setCustomValidity('')"></textarea>
+                 
+                 <button onclick="send()">submit</button>
+                 <p style="text-align: center;"><input type="submit" onclick="send()" class="contact-form-btn" ></p>
+                  <p style="text-align: center;"><input type="reset" class="contact-form-btn"></p>
+                           
+                 
+            
+                    
+         
+        <script>
+            function send() {
+              let Message = document.getElementById("MessageV").value;
+              let NameS = document.getElementById("NameV").value;
+              let email = document.getElementById("emailV").value;
+              let ph = document.getElementById("phNO").value;
+              if (NameS !== "" && email !== "" && Message !== "" && ph !=="") {
+                alert(
+                  "We have received your query,our consultation team will be in touch with you in next 24hours"
+                );
+              } else {
+                alert("Please fill in the correct details");
+              }
+            }
+        </script>   </form></div>
+        
+    </body>
+</html>

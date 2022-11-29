@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>MoolaVest | Get Involved</title>
+        <link rel= 'icon' href='Final logo-PhotoRoom.png' >
+        <meta name="viewport" content="width=device-width initial-scale=1"> 
+        <link href="styling.css" rel="stylesheet" type="text/css"> 
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      
+      
+        
+    </head>
+    <body background="19366.jpg " link="#000" alink="#017bf5" vlink="#000">
+         
+            <div class="header-container">
+            
+        <div>
+            <nav class="navbar"> 
+                <div class="mobile-nav">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="site-nav-menu">
+                
+                
+                <a href ="index.html"><img src="final1.png" class="logo" alt></a>
+           
+            <ul class="main-menu">
+                <li><a href ="index.html">HOME</a></li>
+                <li><a href ="AboutUs.html">ABOUT US</a></li>
+                <li><a href ="OurWork.html">OUR WORK</a></li>
+                <li><a href ="Gallery.html">GALLERY</a><li>
+                <li><a class="active" href ="GetInvolved.html">GET INVOLVED</a></li>
+                <li><a href ="ContactUs.html">CONTACT US</a></li> 
+            </ul>
+        
+                  
+                       <section id="hero-section"></section>
+                       
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    
+    <script>$(document).ready(function(){
+    $(".mobile-nav i").click(function(){
+        $(".site-nav-menu").toggleClass("mobile-menu");
+    });
+ });
+ </script>
+      </div>
+        </div>  
+        
+            <p class="top">If interested but do not know where to begin, or unsure about investments,
+                get in touch with us and let our financial advisors assist you with
+                the best investment portfolio match for you as possible.</p>
+        </div>
+
+               <div class="contact-section">
+
+                   <h1>Get Involved</h1>
+           <div class="border"></div>
+           
+               <form class="contact-form" action="index.html" method="post">
+                   
+                   <input type="text"  id="NameV" class="contact-form-text" placeholder="Your name" 
+                          required name ="Your name" oninvalid="this.setCustomValidity('Please Enter Your Name')" oninput="this.setCustomValidity('')">
+                   
+                   <input type="email" id="emailV" class="contact-form-text" placeholder="Your email" 
+                          required name="Your email"  oninvalid="this.setCustomValidity('Please Enter Your Email')" oninput="this.setCustomValidity('')">
+                   
+                 <input type="text" id="phNO" class="contact-form-text" placeholder="Your phone"
+                         required name="Your phone" oninvalid="this.setCustomValidity('Please Enter Your Phone Number')" oninput="this.setCustomValidity('')" pattern="[0-9]{1}[0-9]{9}">
+              
+                 <textarea class="contact-form-text" id="MessageV" placeholder="Your message"
+                           required oninvalid="this.setCustomValidity('Please Enter Your Message')" oninput="this.setCustomValidity('')"></textarea>
+                 
+                
+                 <p style="text-align: center;"><input type="submit" onclick="send()" class="contact-form-btn" ></p>
+                  <p style="text-align: center;"><input type="reset" class="contact-form-btn"></p>
+                           
+                 
+               </form>
+                    </div>
+         
+        <script>
+            function send() {
+              let Message = document.getElementById("MessageV").value;
+              let NameS = document.getElementById("NameV").value;
+              let email = document.getElementById("emailV").value;
+              let ph = document.getElementById("phNO").value;
+              if (NameS !== "" && email !== "" && Message !== "" && ph !=="") {
+                alert(
+                  "We have received your query,our consultation team will be in touch with you in next 24hours"
+                );
+              } else {
+                alert("Please fill in all the correct details");
+              }
+            }
+        </script>
+
+        
+     
+        
+        
+     <footer class ="footer">
+            <div class="container">
+                <div class="rows">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul class="list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="AboutUs.html">About Us</a></li>
+                            <li><a href="Gallery.html">Gallery</a></li>                   
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Get Help</h4>
+                        <ul class="list">
+                            <li><a href="ContactUs.html">Contact Us</a></li>
+                            <li><a href="https://www.moneyweb.co.za/financial-advisor-views/investment-basics-answers-to-common-questions/">FAQ</a></li>
+                            <li><a href="References.docx">References</a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Get Services</h4>
+                        <ul class="list">
+                            <li><a href="OurWork">Our Products</a></li>
+                            <li><a href="GetInvolved.html">Interested</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Follow Us</h4>
+                        <div class="socialinks">
+                            <a href="https://www.facebook.com/profile.php?id=100009539311199"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/moolavest_sa/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://wa.me/2769084541"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                    </div>
+                </div>
+            </div> 
+        </footer>
+        <footer class="copyrights">&copy;MoolaVest 2022 |
+            MoolaVest Limited is an authorised financial services provider.</footer>
+            
+    
+        
+    </body>
+</html>
